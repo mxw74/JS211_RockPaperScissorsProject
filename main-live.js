@@ -1,7 +1,8 @@
 'use strict';
 // the function that will be called by the unit test below
 
-
+let name1 =""
+let name2 =""
 function userNames() {
     
     let name1 = document.getElementById('player1Name').value
@@ -20,6 +21,9 @@ const rockPaperScissors = (hand1, hand2) => {
 
     hand1 = hand1.toLowerCase().trim()
     hand2 = hand2.toLowerCase().trim()
+
+    let name1 = document.getElementById('player1Name').value
+    let name2 = document.getElementById('player2Name').value
   
     // Write code here
     // Use the unit test to see what is expected
@@ -32,12 +36,12 @@ const rockPaperScissors = (hand1, hand2) => {
     } else if ( (hand1=='rock' && hand2=='scissors') || (hand1 =='scissors' && hand2=='paper') || (hand1 =='paper' && hand2 =='rock') ) {
   
       console.log('Player 1 Wins!');
-      document.getElementById('display').innerHTML = 'Player 1!';
+      document.getElementById('display').innerHTML = name1;
   
     } else if ( (hand1=='scissors' && hand2=='rock') || (hand1 =='paper' && hand2=='scissors') || (hand1 =='rock' && hand2 =='paper') ) {
   
       console.log('Player 2 Wins!');
-      document.getElementById('display').innerHTML = 'Player 2!';
+      document.getElementById('display').innerHTML = name2;
   
   } else {
     // getPrompt()
