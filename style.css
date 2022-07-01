@@ -4,14 +4,21 @@ body {
     background: black;
     color: white;
     border: solid white;
+    background-image: url(./gaming.jpeg);
+    background-size: cover;
 }
 
 h1 {
     text-decoration: underline;
+    background-color: black;
 }
 
 .headingInstructions p {
     font-size: 15pt;
+}
+
+.instructions {
+    background-color: black;
 }
 
 div {
@@ -32,6 +39,11 @@ select {
     padding: 30px;
 }
 
+.namePrompt {
+    color: white;
+    background-color: black;
+}
+
 .input1 .input2 {
     width: 500px;
 }
@@ -49,4 +61,10 @@ button {
     border: solid white;
     background-color: black;
     margin: 10px;
+}
+
+@media(min-width:700px) {
+    .namePrompt {
+        background-color: transparent;
+    }
 }
