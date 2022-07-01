@@ -12,7 +12,7 @@ function userNames() {
 
     // I need a connection that puts the name on the page once it has been collected via a button
   }
-  
+
 const rockPaperScissors = (hand1, hand2) => {
 
     hand1 = document.getElementById('user1Input').value
@@ -49,7 +49,7 @@ const rockPaperScissors = (hand1, hand2) => {
   } // end of function 
 
   function clearDisplay() {
-   document.getElementById("display").innerHTML= "Winner Goes First!"
+   document.getElementById("display").innerHTML= null
   }
 
   

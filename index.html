@@ -7,20 +7,27 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
+  <div class="headingInstructions">
     <h1>Rock Paper Scissors</h1>
+    <h2>How to Play:</h2>
+    <p>1. Input player 1's and player 2's names and click submit names</p>
+    <p>2. Each player select one of the 3 options below their name</p>
+    <p>3. Once everything is selected click check who wins</p>
+    <p>4. You can clear who the winner is and play again. Refresh the page to change the player names. Enjoy 😃!</p>
+  </div>
     <hr/>
     <div id="user2Display"></div>
     <div id="errorDisplay"></div>
 
     <form action="" method="GET">
-     
+     <div class="nameinputs">
       <div>Enter your names below:</div>
       <input type="text" id="player1Name" placeholder="Player 1 Name">
       <input type="text" id="player2Name" placeholder="Player 2 Name">
-      <button type="button" onclick="userNames()">Submit Names</button>
+    </div>
+    <button type="button" onclick="userNames()">Submit Names</button>
 
-      <!-- <input type="text" id="user1Input" placeholder="Player 1">
-      <input type="text" id="user2Input" placeholder="Player 2"> -->
+      <hr/>
       <div class="input1">
         <div for="user1Input" id="display1"></div>
         <div class="options">
@@ -42,6 +49,7 @@
             </optgroup>
           </select>
         </div>
+        <hr/>
       </div>
 
       <div class="winner">The winner is:<div id="display"></div></div>
@@ -49,8 +57,6 @@
     </form>
     
     <button type="button" onclick="rockPaperScissors()">Check who wins</button>
-    <button type="reset" onclick="clearDisplay()">Reset Choices</button>
-    
-    <hr/>
+    <button type="reset" onclick="clearDisplay()">Reset Winner</button>
   </body>
 </html>
