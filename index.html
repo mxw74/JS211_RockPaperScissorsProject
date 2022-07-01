@@ -4,18 +4,53 @@
     <meta charset="utf-8">
     <title></title>
     <script src="main-live.js"></script>
+    <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>Hello World!</h1>
+    <h1>Rock Paper Scissors</h1>
     <hr/>
-    <div id="display"></div>
     <div id="user2Display"></div>
+    <div id="errorDisplay"></div>
 
     <form action="" method="GET">
-      <input type="text" id="user1Input">
-      <input type="text" id="user2Input">
+     
+      <div>Enter your names below:</div>
+      <input type="text" id="player1Name" placeholder="Player 1 Name">
+      <input type="text" id="player2Name" placeholder="Player 2 Name">
+      <button type="button" onclick="userNames()">Submit Names</button>
+
+      <!-- <input type="text" id="user1Input" placeholder="Player 1">
+      <input type="text" id="user2Input" placeholder="Player 2"> -->
+      <div class="input1">
+        <div for="user1Input" id="display1"></div>
+        <div class="options">
+          <select name="player1" id="user1Input">
+            <option label="Rock" value="rock"></option>
+            <option label="Paper" value="paper"></option>
+            <option label="Scissors" value="scissors"></option>
+          </select>
+        </div>
+      </div>
+      <div class="input2">
+        <div for="user2Input" id="display2"></div>
+        <div class="options">
+          <select name="player2" id="user2Input">
+            <optgroup>
+              <option label="Rock" value="rock"></option>
+              <option label="Paper" value="paper"></option>
+              <option label="Scissors" value="scissors"></option>
+            </optgroup>
+          </select>
+        </div>
+      </div>
+
+      <div class="winner">The winner is:<div id="display"></div></div>
+
     </form>
-    <button onclick="rockPaperScissors()">Click Me</button>
+    
+    <button type="button" onclick="rockPaperScissors()">Check who wins</button>
+    <button type="reset" onclick="clearDisplay()">Reset Choices</button>
+    
     <hr/>
   </body>
 </html>
